@@ -1,0 +1,13 @@
+header {
+  /* position: relative; */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  /* background-color: yellow; */
+}
+header ul {
+  padding: 2%;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
