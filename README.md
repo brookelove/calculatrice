@@ -11,4 +11,13 @@ Resources:
 
 - [CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 
-Tools:
+Tools/Dependences:
+
+- [Three.js](https://threejs.org/)
+- [GSAP](https://gsap.com/)
+- [Blender](https://www.blender.org/)
+- [Figma](https://www/figma.com)
+
+Images:
+
+- [IconKanan](https://www.flaticon.com/free-icon/hourglass_3675683?term=hourglass&page=1&position=5&origin=tag&related_id=3675683)

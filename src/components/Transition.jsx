@@ -13,9 +13,6 @@ const TransitionComponent = ({ children }) => {
   const handleLoadingComplete = () => {
     setIsLoading(false);
   };
-  // const startLoading = () => {
-  //   setIsLoading(true);
-  // };
 
   useEffect(() => {
     setIsLoading(true);

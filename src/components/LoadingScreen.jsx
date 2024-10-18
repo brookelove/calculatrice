@@ -4,11 +4,15 @@ import gsap from "gsap";
 // css
 import "../assets/css/loading.css";
 
+// image loading
+import hourglass from "../assets/images/hourglass.png";
+
 const LoadingScreen = ({ onComplete }) => {
   const [progress, setProgress] = useState(0);
   const progressRef = useRef(null);
 
-  // if (!progressRef.current) return; // Ensure the ref is attached
+  //call to id
+  const hourglassImg = "hourglassImg";
 
   useEffect(() => {
     if (progressRef.current) {
@@ -27,9 +31,27 @@ const LoadingScreen = ({ onComplete }) => {
     }
   }, [onComplete]);
 
+  useEffect(() => {
+    let hourglassId = document.getElementById(hourglassImg);
+    gsap.to(hourglassId, {
+      start: 0.3,
+      duration: 3, //matches duration of the loading bar
+      rotation: 360,
+      transformOrigin: "50% 50%",
+    });
+  });
+
   return (
     <div className="loadingContainer">
-      <p ref={progressRef}>{progress}%</p>
+      <main>
+        <img
+          id={hourglassImg}
+          src={hourglass}
+          className="hourglassImg"
+          alt="hourglass icon"
+        />
+        <p ref={progressRef}>{progress} %</p>
+      </main>
     </div>
   );
 };

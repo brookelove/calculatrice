@@ -1,8 +1,13 @@
 header {
-  /* position: relative; */
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
+  height: 60px;
+  background-color: whitesmoke;
   margin-left: calc(-50vw + 50%);
-  /* background-color: yellow; */
+  z-index: 1;
+  position: absolute;
 }
 header ul {
   padding: 2%;
@@ -10,4 +15,5 @@ header ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
